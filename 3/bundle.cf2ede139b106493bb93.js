@@ -69,24 +69,24 @@
     `}createStartDateHtml(){return i`
       <time class="event__date" datetime="2019-03-18">MAR 18</time>
     `}createTypeIconHtml(){return i`
-    <div class="event__type">
-      <img class="event__type-icon" width="42" height="42" src="img/icons/taxi.png" alt="Event type icon">
-    </div>
+      <div class="event__type">
+        <img class="event__type-icon" width="42" height="42" src="img/icons/taxi.png" alt="Event type icon">
+      </div>
     `}createDestinationHtml(){return i`
       <h3 class="event__title">Taxi Amsterdam</h3>
     `}createScheduleHtml(){return i`
-    <div class="event__schedule">
-      <p class="event__time">
-        <time class="event__start-time" datetime="2019-03-18T10:30">10:30</time>
-        —
-        <time class="event__end-time" datetime="2019-03-18T11:00">11:00</time>
-      </p>
-      <p class="event__duration">30M</p>
-    </div>
+      <div class="event__schedule">
+        <p class="event__time">
+          <time class="event__start-time" datetime="2019-03-18T10:30">10:30</time>
+          —
+          <time class="event__end-time" datetime="2019-03-18T11:00">11:00</time>
+        </p>
+        <p class="event__duration">30M</p>
+      </div>
     `}createPriceHtml(){return i`
-    <p class="event__price">
-      €&nbsp;<span class="event__price-value">20</span>
-    </p>
+      <p class="event__price">
+        €&nbsp;<span class="event__price-value">20</span>
+      </p>
     `}createOfferListHtml(){return i`
       <h4 class="visually-hidden">Offers:</h4>
       <ul class="event__selected-offers">
@@ -108,21 +108,21 @@
       <span class="visually-hidden">Open event</span>
     </button>
     `}}customElements.define("card-view",b);const y=b;class g extends t{constructor(){super()}createHtml(){return i`
-    <form class="event event--edit" action="#" method="post">
-      <header class="event__header">
-        ${this.createTypeFieldHtml()}
-        ${this.createDestinationFieldHtml()}
-        ${this.createScheduleFieldHtml()}
-        ${this.createPriceFieldHtml()}
-        ${this.createSubmitButtonHtml()}
-        ${this.createResetButtonHtml()}
-        ${this.createCloseButtonHtml()}
-      </header>
-      <section class="event__details">
-        ${this.createOfferListFieldHtml()}
-        ${this.createDestinationHtml()}
-      </section>
-    </form>
+      <form class="event event--edit" action="#" method="post">
+        <header class="event__header">
+          ${this.createTypeFieldHtml()}
+          ${this.createDestinationFieldHtml()}
+          ${this.createScheduleFieldHtml()}
+          ${this.createPriceFieldHtml()}
+          ${this.createSubmitButtonHtml()}
+          ${this.createResetButtonHtml()}
+          ${this.createCloseButtonHtml()}
+        </header>
+        <section class="event__details">
+          ${this.createOfferListFieldHtml()}
+          ${this.createDestinationHtml()}
+        </section>
+      </form>
     `}createTypeFieldHtml(){return i`
       <div class="event__type-wrapper">
         <label class="event__type  event__type-btn" for="event-type-toggle-1">
@@ -218,4 +218,4 @@
         </div>
       </section>
     `}}customElements.define("editor-view",g);const H=g;customElements.define("list-view",class extends t{constructor(){super(),this.classList.add("trip-list"),this.setAttribute("role","list")}render(){const e=new Array(4).fill().map(((e,t)=>{const n=0===t?new H:new y;return n.classList.add("trip-list__item"),n.setAttribute("role","listitem"),n.render(),n}));this.replaceChildren(...e)}});const x=document.querySelector("brief-view"),A=document.querySelector("filter-view"),w=document.querySelector("add-button-view"),E=document.querySelector("sort-view"),S=document.querySelector("list-view");x.render(),A.render(),w.render(),E.render(),S.render()})()})();
-//# sourceMappingURL=bundle.d07b737f210b104e2cf2.js.map
+//# sourceMappingURL=bundle.cf2ede139b106493bb93.js.map
